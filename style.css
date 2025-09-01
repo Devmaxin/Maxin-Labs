@@ -254,14 +254,6 @@ a{
     font-size: 20px;
 }
 
-.heropage{
-    height: 80vh;
-}
-
-.first{
-    height: 80vh;
-}
-
 .first p{
     font-size: 15px;
 }
@@ -380,17 +372,8 @@ a{
 
 @media (max-width:400px) {
 
-.first{
-    height: 60vh;
-    
-}
-
 .first h1{
     font-size: 25px;
-}
-
-.heropage{
-    height: 60vh;
 }
 
 .first p{
