@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: tahoma;
+    transition: all 0.3s ease-in-out;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+.logo{
+    height: 40px;
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.heropage{
+    height: 100vh;
+    background-image: url(images/background\ img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first h1{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.first p{
+    margin-top: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.first .btn{
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.btn button{
+    width: 120px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+.btn .ab{
+    background-color: blue;
+    color: white;
+}
+
+.btn .ab:hover{
+    background-color: rgba(0, 0, 255, 0.8);
+}
+
+.btn .prj:hover{
+    background-color: rgba(229, 226, 226, 0.8);
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.about .p{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.about .web{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+
+.about .web img{
+    height: 30px;
+}
+
+.about .web p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.about h2{
+    margin-top: 70px;
+    font-size: 30px;
+}
+
+.about .projects{
+    display: flex;
+    gap: 30px;
+}
+
+.projects div{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects div h3{
+    opacity: 0.7;
+}
+
+.projects div p{
+    opacity: 0.5;
+    text-align: center;
+}
+
+.projects div img:hover{
+    height: 102px;
+}
+
+.projects div img{
+    margin-top: 10px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.outro{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.outro h2{
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.outro p{
+    margin-top: 30px;
+    font-size: 23px;
+    text-align: center;
+}
+
+.outro .contacts{
+    display: flex;
+    gap: 60px;
+}
+
+.outro .contacts img{
+    margin-top: 20px;
+    height: 50px;
+}
+
+.outro .contacts img:hover{
+    margin-top: 20px;
+    height: 51px;
+}
+
+@media (max-width:1000px) {
+
+.logo{
+    height: 30px;
+}
+
+.first h1{
+    font-size: 30px;
+}
+
+.first p{
+    font-size: 20px;
+}
+
+.btn button{
+    width: 100px;
+    padding: 8px;
+}
+
+.about .p{
+    font-size: 20px;
+}
+
+.about .web img{
+    height: 25px;
+}
+
+.about .web p{
+    font-size: 20px;
+}
+
+.about h2{
+    font-size: 25px;
+}
+
+.projects div img{
+    height: 70px;
+}
+
+.projects div img:hover{
+    height: 72px;
+}
+
+.projects div h3{
+    font-size: 16px;
+}
+
+.projects div p{
+    font-size: 13px;
+}
+
+.outro h2{
+    font-size: 25px;
+}
+
+.outro p{
+    font-size: 18px;
+}
+
+.outro .contacts img{
+    height: 35px;
+}
+
+.outro .contacts img:hover{
+    height: 36px;
+}
+
+}
+
+@media (max-width:620px) {
+
+.logo{
+    height: 20px;
+}
+
+.first h1{
+    font-size: 20px;
+}
+
+.heropage{
+    height: 80vh;
+}
+
+.first{
+    height: 80vh;
+}
+
+.first p{
+    font-size: 15px;
+}
+
+.btn button{
+    width: 70px;
+    padding: 8px;
+    font-size: 8px;
+}
+
+.about .p{
+    font-size: 15px;
+}
+
+.about .web img{
+    height: 20px;
+}
+
+.about .web p{
+    font-size: 15px;
+}
+
+.about h2{
+    font-size: 20px;
+}
+
+.projects div img{
+    height: 50px;
+}
+
+.projects div img:hover{
+    height: 52px;
+}
+
+.projects div h3{
+    font-size: 13px;
+}
+
+.projects div p{
+    font-size: 8px;
+}
+
+.outro h2{
+    font-size: 20px;
+}
+
+.outro p{
+    font-size: 15px;
+}
+
+.outro .contacts img{
+    height: 30px;
+}
+
+.outro .contacts img:hover{
+    height: 31px;
+}
+
+
+}
+
+@media (max-width:470px) {
+
+.first{
+    align-items: self-start;
+}
+
+.first h1{
+    font-size: 30px;
+}
+
+.first p{
+    font-size: 18px;
+}
+
+.btn button{
+    width: 100px;
+    padding: 8px;
+    font-size: 12px;
+}
+
+.about .p{
+    font-size: 13px;
+}
+
+.about .projects{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.projects div img{
+    height: 70px;
+}
+
+.projects div img:hover{
+    height: 72px;
+}
+
+.projects div h3{
+    font-size: 20px;
+}
+
+.projects div p{
+    font-size: 13px;
+
+}
+
+.outro p{
+    font-size: 13px;
+}
+
+
+}
+
+
+@media (max-width:400px) {
+
+.first{
+    height: 60vh;
+}
+
+.first h1{
+    font-size: 22px;
+}
+
+.heropage{
+    height: 60vh;
+}
+
+.first p{
+    font-size: 14px;
+}
+
+.btn button{
+    width: 70px;
+    padding: 5px;
+    font-size: 8px;
+}
+
+.about .p{
+    font-size: 10px;
+}
+
+.about .web img{
+    height: 15px;
+}
+
+.about .web p{
+    font-size: 10px;
+}
+
+.outro p{
+    font-size: 10px;
+}
+}
+
+@media (max-width:310px) {
+
+.about .p{
+    font-size: 7px;
+}
+
+.about .web{
+    gap: 10px;
+}
+
+.about .web img{
+    height: 13px;
+}
+
+.about .web p{
+    font-size: 8px;
+}
+
+.projects div img{
+    height: 50px;
+}
+
+.projects div img:hover{
+    height: 52px;
+}
+
+.projects div h3{
+    font-size: 15px;
+}
+
+.projects div p{
+    font-size: 10px;
+
+}
+
+.outro p{
+    font-size: 7px;
+}
+
+}
