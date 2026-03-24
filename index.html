@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maxin Labs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/Maxin labs.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/Maxin labs.png">
+
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<canvas id="starfield"></canvas>
+<div class="grid-overlay"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <img src="images/Maxin labs.png" alt="Maxin Labs" />
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact" class="nav-cta">Work With Us</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-badge">
+    <span class="badge-dot"></span>
+    Currently Building Web2 — Web3 Coming Soon
+  </div>
+
+  <h1 class="hero-title">
+    We Build<br/>
+    <span>Digital Labs</span>
+  </h1>
+
+  <p class="hero-sub">
+    Maxin Labs crafts high-performance web2 platforms and decentralized web3 ecosystems
+  </p>
+
+  <div class="hero-buttons">
+    <a href="#projects" class="btn-primary">Explore Projects</a>
+    <a href="#contact" class="btn-outline">Start a Project</a>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat">
+      <span class="stat-num" data-count="8">0</span>
+      <span class="stat-label">Projects Built</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-count="100">0</span>
+      <span class="stat-label">% Shipped</span>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track" id="marqueeTrack"></div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">About Us</div>
+  <h2 class="section-title">One Lab.<br/>Infinite Builds.</h2>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>
+        <strong>Maxin Labs</strong> is a digital studio focused on building modern web experiences, from simple landing pages to fully functional platforms.
+      </p>
+      <p>
+       Every project we create follows a clear standard: clean design, solid structure, and practical functionality. We focus on building things that work well, load fast, and are easy to scale as they grow.
+      </p>
+      <p>
+        From responsive websites to interactive dashboards, if it runs in the browser, we build it with precision.
+      </p>
+    </div>
+    <div class="pillars reveal">
+      <div class="pillar">
+        <span class="pillar-icon">⚡</span>
+        <h4>Speed First</h4>
+        <p>Every product ships optimized — zero bloat, maximum performance.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar-icon">🧱</span>
+        <h4>Solid Foundations</h4>
+        <p>Built with HTML, CSS, JavaScript, and backend tools structured to grow over time.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar-icon">🧪</span>
+        <h4>Lab Tested</h4>
+        <p>Every line of code is reviewed, tested, and battle-hardened.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar-icon">🚀</span>
+        <h4>Ship It</h4>
+        <p>We prioritize progress. Ship, learn, improve, repeat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WEB3 COMING SOON BANNER -->
+<div class="web3-banner reveal">
+  <div class="web3-banner-left">
+    <span class="web3-banner-icon">⛓️</span>
+    <div class="web3-banner-text">
+      <h3>Web3 is on the Horizon</h3>
+      <p>We're currently focused on delivering exceptional <strong>Web2 products</strong> — but we're actively preparing to expand into the blockchain space. Smart contracts, DeFi protocols, NFT platforms, and more are <strong>coming soon</strong> to Maxin Labs.</p>
+    </div>
+  </div>
+  <div class="web3-badge">
+    <span class="web3-badge-dot"></span>
+    Coming Soon
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-header reveal">
+    <div>
+      <div class="section-label">Our Work</div>
+      <h2 class="section-title">Projects We've<br/>Built &amp; Launched</h2>
+    </div>
+    <a href="#contact" class="btn-outline">Start a Project →</a>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- ── PIXVAULT ── -->
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <!-- 📸 To add screenshot: set src="your-image.png" on the img below, then remove the placeholder div -->
+        <img src="images/pixvult u.png" alt="PixVault" class="project-img" id="img-pixvault" />
+        <div class="project-thumb-placeholder ph-theme-blue ph-glow-blue">
+          <div class="ph-bar">
+            <span class="ph-dot ph-dot-red"></span>
+            <span class="ph-dot ph-dot-yel"></span>
+            <span class="ph-dot ph-dot-grn"></span>
+            <span class="ph-url">pixvault.app</span>
+          </div>
+          <div class="ph-preview">
+            <div class="ph-ui-lines">
+              <div class="ph-line ph-line-short"></div>
+              <div class="ph-line ph-line-xlong"></div>
+              <div class="ph-line ph-line-med"></div>
+              <div class="ph-line ph-line-long"></div>
+            </div>
+            <div class="ph-cols">
+              <div class="ph-col-block"></div>
+              <div class="ph-col-block"></div>
+            </div>
+            <div class="ph-center">
+              <div class="ph-icon-wrap ph-accent-blue">🖼️</div>
+              <span class="ph-label">PixVault</span>
+              <span class="ph-sublabel">Add screenshot</span>
+            </div>
+          </div>
+          <div class="ph-swap-hint">
+            <span>📸</span>
+            <span>Drop your screenshot in</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag tag-web2">Web2</span>
+          <span class="tag tag-saas">WallPaper Platform</span>
+        </div>
+        <div class="project-name">PixVault</div>
+        <!-- ✏️ Edit description -->
+        <p class="project-desc">A WallPaper site where users can get 4k high quality wallapaers for both desktop and mobile screens</p>
+        <div class="project-footer">
+          <div class="project-status"><div class="status-dot"></div> Live</div>
+          <!-- ✏️ Replace # with your URL -->
+          <a href="pixvault.name.ng" class="project-link" target="_blank">View Project →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── KAAD TECHNICAL SERVICES ── -->
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <img src="images/kaad.png" alt="Kaad Technical Services" class="project-img" id="img-kaad" />
+        <div class="project-thumb-placeholder ph-theme-cyan ph-glow-cyan">
+          <div class="ph-bar">
+            <span class="ph-dot ph-dot-red"></span>
+            <span class="ph-dot ph-dot-yel"></span>
+            <span class="ph-dot ph-dot-grn"></span>
+            <span class="ph-url">kaadtechnical.com</span>
+          </div>
+          <div class="ph-preview">
+            <div class="ph-ui-lines">
+              <div class="ph-line ph-line-med"></div>
+              <div class="ph-line ph-line-xlong"></div>
+              <div class="ph-line ph-line-short"></div>
+              <div class="ph-line ph-line-long"></div>
+            </div>
+            <div class="ph-cols">
+              <div class="ph-col-block"></div>
+              <div class="ph-col-block"></div>
+            </div>
+            <div class="ph-center">
+              <div class="ph-icon-wrap ph-accent-cyan">🔧</div>
+              <span class="ph-label">Kaad Technical</span>
+              
+            </div>
+          </div>
+         
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag tag-web2">oil company</span>
+          <span class="tag tag-tool">Services</span>
+        </div>
+        <div class="project-name">Kaad Technical Services</div>
+        <p class="project-desc">Your description for Kaad Technical Services goes here. Tell visitors what this project does, who it's for, and what makes it special.</p>
+        <div class="project-footer">
+          <div class="project-status"><div class="status-dot"></div> Live</div>
+          <a href="kaadtechnicalservices.com" class="project-link" target="_blank">View Project →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── TIMEED ── -->
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <img src="images/timeed-p (1).jpg" alt="TimeEd" class="project-img" id="img-timeed" />
+        <div class="project-thumb-placeholder ph-theme-violet ph-glow-violet">
+          <div class="ph-bar">
+            <span class="ph-dot ph-dot-red"></span>
+            <span class="ph-dot ph-dot-yel"></span>
+            <span class="ph-dot ph-dot-grn"></span>
+            <span class="ph-url">timeed.app</span>
+          </div>
+          <div class="ph-preview">
+            <div class="ph-ui-lines">
+              <div class="ph-line ph-line-long"></div>
+              <div class="ph-line ph-line-short"></div>
+              <div class="ph-line ph-line-xlong"></div>
+              <div class="ph-line ph-line-med"></div>
+            </div>
+            <div class="ph-cols">
+              <div class="ph-col-block"></div>
+              <div class="ph-col-block"></div>
+            </div>
+            <div class="ph-center">
+              <div class="ph-icon-wrap ph-accent-violet">⏱️</div>
+              <span class="ph-label">TimeEd</span>
+              <span class="ph-sublabel">Add screenshot</span>
+            </div>
+          </div>
+          <div class="ph-swap-hint">
+            <span>📸</span>
+            <span>Drop your screenshot in</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag tag-web2">Web2</span>
+          <span class="tag tag-saas">EdTech</span>
+        </div>
+        <div class="project-name">TimeEd</div>
+        <p class="project-desc">Your description for TimeEd goes here. Tell visitors what this project does, who it's for, and what makes it special.</p>
+        <div class="project-footer">
+          <div class="project-status"><div class="status-dot"></div> Live</div>
+          <a href="time-ed.vercel.app" class="project-link" target="_blank">View Project →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── WEB3EDU ── -->
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <img src="images/web3edu (2).jpeg" alt="Web3Edu" class="project-img" id="img-web3edu" />
+        <div class="project-thumb-placeholder ph-theme-rose ph-glow-rose">
+          <div class="ph-bar">
+            <span class="ph-dot ph-dot-red"></span>
+            <span class="ph-dot ph-dot-yel"></span>
+            <span class="ph-dot ph-dot-grn"></span>
+            <span class="ph-url">web3edu.name.ng</span>
+          </div>
+          <div class="ph-preview">
+            <div class="ph-ui-lines">
+              <div class="ph-line ph-line-xlong"></div>
+              <div class="ph-line ph-line-long"></div>
+              <div class="ph-line ph-line-med"></div>
+              <div class="ph-line ph-line-short"></div>
+            </div>
+            <div class="ph-cols">
+              <div class="ph-col-block"></div>
+              <div class="ph-col-block"></div>
+            </div>
+            <div class="ph-center">
+              <div class="ph-icon-wrap ph-accent-rose">📚</div>
+              <span class="ph-label">Web3Edu</span>
+              <span class="ph-sublabel">Add screenshot</span>
+            </div>
+          </div>
+          <div class="ph-swap-hint">
+            <span>📸</span>
+            <span>Drop your screenshot in</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag tag-web2">Web3</span>
+          <span class="tag tag-saas">Web3 Education</span>
+        </div>
+        <div class="project-name">Web3Edu</div>
+        <p class="project-desc">Web3Edu is an educational site that teaches everything you need to know about the web3 space</p>
+        <div class="project-footer">
+          <div class="project-status"><div class="status-dot"></div> Live</div>
+          <a href="web3edu.name.ng" class="project-link" target="_blank">View Project →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── MOVIE VAULT ── -->
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <img src="images/movie-vault (1).jpg" alt="Movie Vault" class="project-img" id="img-movievault" />
+        <div class="project-thumb-placeholder ph-theme-green ph-glow-green">
+          <div class="ph-bar">
+            <span class="ph-dot ph-dot-red"></span>
+            <span class="ph-dot ph-dot-yel"></span>
+            <span class="ph-dot ph-dot-grn"></span>
+            <span class="ph-url">movievault.app</span>
+          </div>
+          <div class="ph-preview">
+            <div class="ph-ui-lines">
+              <div class="ph-line ph-line-med"></div>
+              <div class="ph-line ph-line-long"></div>
+              <div class="ph-line ph-line-xlong"></div>
+              <div class="ph-line ph-line-short"></div>
+            </div>
+            <div class="ph-cols">
+              <div class="ph-col-block"></div>
+              <div class="ph-col-block"></div>
+            </div>
+            <div class="ph-center">
+              <div class="ph-icon-wrap ph-accent-green">🎬</div>
+              <span class="ph-label">Movie Vault</span>
+              <span class="ph-sublabel">Add screenshot</span>
+            </div>
+          </div>
+          <div class="ph-swap-hint">
+            <span>📸</span>
+            <span>Drop your screenshot in</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag tag-web2">Web2</span>
+          <span class="tag tag-tool">Entertainment</span>
+        </div>
+        <div class="project-name">Movie Vault</div>
+        <p class="project-desc">An MVP site where users can get access to their favourite movies</p>
+        <div class="project-footer">
+          <div class="project-status"><div class="status-dot"></div> Live</div>
+          <a href="movie-vault-labs.vercel.app" class="project-link" target="_blank">View Project →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── MEME KING ── -->
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <img src="images/memeking (2).jpg" alt="Meme King" class="project-img" id="img-memeking" />
+        <div class="project-thumb-placeholder ph-theme-amber ph-glow-amber">
+          <div class="ph-bar">
+            <span class="ph-dot ph-dot-red"></span>
+            <span class="ph-dot ph-dot-yel"></span>
+            <span class="ph-dot ph-dot-grn"></span>
+            <span class="ph-url">meme-king.vercel.app</span>
+          </div>
+          <div class="ph-preview">
+            <div class="ph-ui-lines">
+              <div class="ph-line ph-line-short"></div>
+              <div class="ph-line ph-line-xlong"></div>
+              <div class="ph-line ph-line-long"></div>
+              <div class="ph-line ph-line-med"></div>
+            </div>
+            <div class="ph-cols">
+              <div class="ph-col-block"></div>
+              <div class="ph-col-block"></div>
+            </div>
+            <div class="ph-center">
+              <div class="ph-icon-wrap ph-accent-amber">👑</div>
+              <span class="ph-label">Meme King</span>
+              <span class="ph-sublabel">Add screenshot</span>
+            </div>
+          </div>
+          <div class="ph-swap-hint">
+            <span>📸</span>
+            <span>Drop your screenshot in</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag tag-web2">Web3</span>
+          <span class="tag tag-tool">Memecoin</span>
+        </div>
+        <div class="project-name">Meme King</div>
+        <p class="project-desc">Your description for Meme King goes here. Tell visitors what this project does, who it's for, and what makes it special.</p>
+        <div class="project-footer">
+          <div class="project-status"><div class="status-dot"></div> Live</div>
+          <a href="meme-king.vercel.app" class="project-link" target="_blank">View Project →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="services-inner">
+    <div class="reveal">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Our Services</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-num">01</div>
+        <span class="service-icon">🌐</span>
+        <h3>Web Development</h3>
+        <p>Full-stack web Development built for performance and scale. From MVPs to production-ready products. We ship clean, fast, and reliable.</p>
+        <div class="service-tech">
+          <span class="tech-chip">HTML</span>
+          <span class="tech-chip">CSS</span>
+          <span class="tech-chip">JAVASCRIPT</span>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">02</div>
+        <span class="service-icon">🛒</span>
+        <h3>E-Commerce Sites</h3>
+        <p>Fully functional online stores built to sell. From product pages to checkout flows — we build e-commerce experiences that look great and convert visitors into customers.</p>
+        <div class="service-tech">
+          <span class="tech-chip">WordPress</span>
+          <span class="tech-chip">HTML/CSS/JS</span>
+          <span class="tech-chip">WooCommerce</span>
+          <span class="tech-chip">Payments</span>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">03</div>
+        <span class="service-icon">🟦</span>
+        <h3>WordPress Development</h3>
+        <p>Custom WordPress sites built from scratch — themes, plugins, and full site editors tailored to your brand. Fast, SEO-friendly, and easy for you to manage.</p>
+        <div class="service-tech">
+          <span class="tech-chip">WordPress</span>
+          <span class="tech-chip">WooCommerce</span>
+          <span class="tech-chip">Elementor</span>
+          <span class="tech-chip">Custom Themes</span>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">04</div>
+        <span class="service-icon">🚀</span>
+        <h3>Landing Pages & Sites</h3>
+        <p>High-converting landing pages and company websites that look stunning and load fast. Built to impress, designed to convert.</p>
+        <div class="service-tech">
+          <span class="tech-chip">HTML/CSS/JS</span>
+          <span class="tech-chip">Next.js</span>
+          <span class="tech-chip">Webflow</span>
+          <span class="tech-chip">SEO-Ready</span>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">05</div>
+        <span class="service-icon">🛠️</span>
+        <h3>Maintenance & Support</h3>
+        <p>Ongoing support, bug fixes, performance improvements, and feature updates for existing web products. We keep your product running at its best.</p>
+        <div class="service-tech">
+          <span class="tech-chip">Bug Fixes</span>
+          <span class="tech-chip">Performance</span>
+          <span class="tech-chip">Updates</span>
+          <span class="tech-chip">Monitoring</span>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">06</div>
+        <span class="service-icon">📊</span>
+        <h3>Dashboards & Analytics</h3>
+        <p>Custom admin panels, data dashboards, and analytics interfaces. We turn raw data into visual insights your team can actually use.</p>
+        <div class="service-tech">
+          <span class="tech-chip">Admin Dashboard</span>
+          <span class="tech-chip">Real-time</span>
+          <span class="tech-chip">Custom UI</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label">Get In Touch</div>
+  <h2 class="contact-title reveal">Let's Build<br/><span>Something Real</span></h2>
+  <p class="contact-sub reveal">Got a project in mind? Tell us what you're building and we'll get back to you within 24 hours.</p>
+
+  <form class="contact-form reveal" id="contactForm">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="f-name">Your Name</label>
+        <input id="f-name" type="text" name="name" placeholder="Satoshi Nakamoto" required />
+      </div>
+      <div class="form-group">
+        <label for="f-email">Email</label>
+        <input id="f-email" type="email" name="email" placeholder="hello@maxin.labs" required />
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="f-type">Project Type</label>
+      <select id="f-type" name="project_type">
+        <option>Web Development</option>
+        <option>E-Commerce Site</option>
+        <option>WordPress Development</option>
+        <option>Landing Page / Website</option>
+        <option>Maintenance & Support</option>
+        <option>Dashboard & Analytics</option>
+        <option>Full Product Build</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="f-msg">Tell Us About Your Project</label>
+      <textarea id="f-msg" name="message" placeholder="Describe what you want to build..." required></textarea>
+    </div>
+    <button type="submit" class="form-submit" id="submitBtn">
+      <span id="btnText">Send Message →</span>
+      <span id="btnLoader" style="display:none">Sending...</span>
+    </button>
+  </form>
+  <div class="toast toast-success" id="toastSuccess">✓ Message sent! We'll be in touch within 24 hours.</div>
+  <div class="toast toast-error" id="toastError">✗ Something went wrong. Please try again or email us directly.</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <img src="Maxin labs.png" alt="Maxin Labs" />
+  </div>
+  <ul class="footer-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <span class="footer-copy">© 2025 Maxin Labs. All rights reserved.</span>
+</footer>
+
+<script>
+  // ── STARFIELD ──
+  const canvas = document.getElementById('starfield');
+  const ctx = canvas.getContext('2d');
+  let stars = [];
+  let W, H;
+
+  function resize() {
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+
+  function initStars() {
+    stars = [];
+    const count = Math.floor((W * H) / 3500);
+    for (let i = 0; i < count; i++) {
+      stars.push({
+        x: Math.random() * W,
+        y: Math.random() * H,
+        r: Math.random() * 1.4 + 0.2,
+        opacity: Math.random() * 0.7 + 0.1,
+        speed: Math.random() * 0.15 + 0.02,
+        twinkleSpeed: Math.random() * 0.02 + 0.005,
+        twinklePhase: Math.random() * Math.PI * 2,
+        blue: Math.random() > 0.85
+      });
+    }
+  }
+
+  // Shooting stars
+  let shooters = [];
+  function spawnShooter() {
+    if (Math.random() > 0.004) return;
+    shooters.push({
+      x: Math.random() * W,
+      y: Math.random() * H * 0.5,
+      vx: (Math.random() * 3 + 2) * (Math.random() > 0.5 ? 1 : -1),
+      vy: Math.random() * 2 + 1,
+      len: Math.random() * 120 + 60,
+      alpha: 1,
+      decay: 0.015 + Math.random() * 0.01
+    });
+  }
+
+  let t = 0;
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    t += 0.01;
+    spawnShooter();
+
+    stars.forEach(s => {
+      s.twinklePhase += s.twinkleSpeed;
+      const opacityNow = s.opacity * (0.6 + 0.4 * Math.sin(s.twinklePhase));
+      s.y -= s.speed;
+      if (s.y < 0) { s.y = H; s.x = Math.random() * W; }
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+      if (s.blue) {
+        ctx.fillStyle = `rgba(100,150,255,${opacityNow})`;
+      } else {
+        ctx.fillStyle = `rgba(200,220,255,${opacityNow})`;
+      }
+      ctx.fill();
+    });
+
+    shooters = shooters.filter(sh => sh.alpha > 0);
+    shooters.forEach(sh => {
+      const angle = Math.atan2(sh.vy, sh.vx);
+      const grad = ctx.createLinearGradient(
+        sh.x, sh.y,
+        sh.x - Math.cos(angle) * sh.len,
+        sh.y - Math.sin(angle) * sh.len
+      );
+      grad.addColorStop(0, `rgba(255,255,255,${sh.alpha})`);
+      grad.addColorStop(1, 'rgba(255,255,255,0)');
+      ctx.beginPath();
+      ctx.moveTo(sh.x, sh.y);
+      ctx.lineTo(sh.x - Math.cos(angle) * sh.len, sh.y - Math.sin(angle) * sh.len);
+      ctx.strokeStyle = grad;
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+      sh.x += sh.vx;
+      sh.y += sh.vy;
+      sh.alpha -= sh.decay;
+    });
+
+    requestAnimationFrame(draw);
+  }
+
+  window.addEventListener('resize', () => { resize(); initStars(); });
+  resize(); initStars(); draw();
+
+  // ── PROJECT IMAGES — auto-show if src is set ──
+  document.querySelectorAll('.project-img').forEach(img => {
+    if (img.src && img.src !== window.location.href) {
+      img.classList.add('loaded');
+      const ph = img.nextElementSibling;
+      if (ph) ph.style.display = 'none';
+    }
+  });
+
+  // ── NAV SCROLL ──
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // ── MARQUEE — Web2 only ──
+  const items = [
+    'Web App Development',
+    'SaaS Products',
+    'Landing Pages',
+    'UI/UX Design',
+    'React Frontends',
+    'Full-Stack Build',
+    'API Development',
+    'Dashboards & Analytics',
+    'Next.js Apps',
+    'Maintenance & Support'
+  ];
+  const track = document.getElementById('marqueeTrack');
+  [...items, ...items].forEach(text => {
+    const el = document.createElement('span');
+    el.className = 'marquee-item';
+    el.textContent = text;
+    track.appendChild(el);
+  });
+
+  // ── SCROLL REVEAL ──
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(r => io.observe(r));
+
+  // ── COUNT UP ──
+  const counters = document.querySelectorAll('[data-count]');
+  const cio = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const target = +e.target.dataset.count;
+        const suffix = e.target.dataset.suffix || (target === 100 ? '%' : '+');
+        let current = 0;
+        const step = target / 60;
+        const timer = setInterval(() => {
+          current = Math.min(current + step, target);
+          e.target.textContent = Math.floor(current) + suffix;
+          if (current >= target) clearInterval(timer);
+        }, 20);
+        cio.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  counters.forEach(c => cio.observe(c));
+
+  // ── PROJECT CARD MINI ANIMATIONS ──
+  function drawProjectVisual(id, color1, color2, type) {
+    const container = document.getElementById(id);
+    if (!container) return;
+    const c = document.createElement('canvas');
+    c.style.position = 'absolute';
+    c.style.inset = '0';
+    c.style.width = '100%';
+    c.style.height = '100%';
+    container.insertBefore(c, container.firstChild);
+    c.width = container.offsetWidth;
+    c.height = container.offsetHeight;
+    const cx = c.getContext('2d');
+    let t2 = 0;
+
+    if (type === 'wave') {
+      (function wave() {
+        cx.clearRect(0, 0, c.width, c.height);
+        const grad = cx.createLinearGradient(0, 0, c.width, c.height);
+        grad.addColorStop(0, color1 + '20');
+        grad.addColorStop(1, color2 + '10');
+        cx.fillStyle = grad;
+        cx.fillRect(0, 0, c.width, c.height);
+        for (let w = 0; w < 3; w++) {
+          cx.beginPath();
+          for (let x = 0; x <= c.width; x++) {
+            const y = c.height/2 + Math.sin(x * 0.02 + t2 + w * 1.2) * (20 - w*4);
+            x === 0 ? cx.moveTo(x, y) : cx.lineTo(x, y);
+          }
+          cx.strokeStyle = color1 + (70 - w*20).toString(16);
+          cx.lineWidth = 1.5;
+          cx.stroke();
+        }
+        t2 += 0.03;
+        requestAnimationFrame(wave);
+      })();
+    } else if (type === 'grid') {
+      (function grid() {
+        cx.clearRect(0, 0, c.width, c.height);
+        cx.fillStyle = color1 + '10';
+        cx.fillRect(0, 0, c.width, c.height);
+        const spacing = 28;
+        for (let x = 0; x < c.width; x += spacing) {
+          for (let y = 0; y < c.height; y += spacing) {
+            const dist = Math.sqrt(Math.pow(x - c.width/2, 2) + Math.pow(y - c.height/2, 2));
+            const pulse = Math.sin(dist * 0.05 - t2 * 2) * 0.5 + 0.5;
+            cx.beginPath();
+            cx.arc(x, y, 1.5 * pulse + 0.5, 0, Math.PI * 2);
+            cx.fillStyle = color1 + Math.floor(pulse * 160 + 40).toString(16);
+            cx.fill();
+          }
+        }
+        t2 += 0.02;
+        requestAnimationFrame(grid);
+      })();
+    } else if (type === 'orbit') {
+      (function orbit() {
+        cx.clearRect(0, 0, c.width, c.height);
+        const grad = cx.createRadialGradient(c.width/2, c.height/2, 0, c.width/2, c.height/2, c.width/2);
+        grad.addColorStop(0, color1 + '25');
+        grad.addColorStop(1, 'transparent');
+        cx.fillStyle = grad;
+        cx.fillRect(0, 0, c.width, c.height);
+        for (let i = 0; i < 3; i++) {
+          const r = 30 + i * 22;
+          cx.beginPath();
+          cx.arc(c.width/2, c.height/2, r, 0, Math.PI * 2);
+          cx.strokeStyle = color1 + '30';
+          cx.lineWidth = 1;
+          cx.stroke();
+          const angle = t2 * (1 - i * 0.3) + (i * Math.PI * 0.6);
+          const px = c.width/2 + Math.cos(angle) * r;
+          const py = c.height/2 + Math.sin(angle) * r;
+          cx.beginPath();
+          cx.arc(px, py, 4 - i, 0, Math.PI * 2);
+          cx.fillStyle = color1;
+          cx.fill();
+        }
+        t2 += 0.025;
+        requestAnimationFrame(orbit);
+      })();
+    }
+  }
+
+  setTimeout(() => {
+    drawProjectVisual('pv1', '#2563ff', '#7c3aed', 'wave');
+    drawProjectVisual('pv2', '#0ea5e9', '#06b6d4', 'grid');
+    drawProjectVisual('pv3', '#a855f7', '#ec4899', 'orbit');
+    drawProjectVisual('pv4', '#f43f5e', '#ef4444', 'wave');
+    drawProjectVisual('pv5', '#10b981', '#06b6d4', 'grid');
+  }, 300);
+
+  // ── CURSOR ──
+  const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursorRing');
+  let mx = 0, my = 0, rx = 0, ry = 0;
+
+  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+
+  function animateCursor() {
+    cursor.style.left = mx - 4 + 'px';
+    cursor.style.top = my - 4 + 'px';
+    rx += (mx - rx - 16) * 0.15;
+    ry += (my - ry - 16) * 0.15;
+    ring.style.left = rx + 'px';
+    ring.style.top = ry + 'px';
+    requestAnimationFrame(animateCursor);
+  }
+  animateCursor();
+
+  document.querySelectorAll('a, button, .project-card, .pillar, .service-card').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      ring.style.width = '48px';
+      ring.style.height = '48px';
+      ring.style.borderColor = 'rgba(37,99,255,0.8)';
+    });
+    el.addEventListener('mouseleave', () => {
+      ring.style.width = '32px';
+      ring.style.height = '32px';
+      ring.style.borderColor = 'rgba(37,99,255,0.5)';
+    });
+  });
+
+  // ── FORM SUBMIT via Formspree ──
+  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xyknqbwa';
+
+  document.getElementById('contactForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const btn = document.getElementById('submitBtn');
+    const btnText = document.getElementById('btnText');
+    const btnLoader = document.getElementById('btnLoader');
+    const toastSuccess = document.getElementById('toastSuccess');
+    const toastError = document.getElementById('toastError');
+
+    btn.disabled = true;
+    btnText.style.display = 'none';
+    btnLoader.style.display = 'inline';
+    toastSuccess.style.display = 'none';
+    toastError.style.display = 'none';
+
+    try {
+      const data = new FormData(form);
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        form.style.display = 'none';
+        toastSuccess.style.display = 'block';
+        form.reset();
+        setTimeout(() => {
+          form.style.display = 'flex';
+          toastSuccess.style.display = 'none';
+        }, 5000);
+      } else {
+        const json = await response.json();
+        toastError.style.display = 'block';
+        toastError.textContent = '✗ ' + (json.errors?.[0]?.message || 'Something went wrong. Please try again.');
+      }
+    } catch (err) {
+      toastError.style.display = 'block';
+      toastError.textContent = '✗ Network error. Please check your connection and try again.';
+    } finally {
+      btn.disabled = false;
+      btnText.style.display = 'inline';
+      btnLoader.style.display = 'none';
+    }
+  });
+</script>
+</body>
+</html>
